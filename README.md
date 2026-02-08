@@ -4,7 +4,7 @@ A minimal local EPUB reader with a bookshelf, chapter list, bookmarks, and readi
 
 一个简洁的本地 EPUB 阅读器，包含书架、章节列表和书签，滚动阅读，支持竖排与固定页面尺寸。
 
-**Features**
+## **Features**
 1. Import EPUB and extract metadata, spine, chapters, and cover
 2. Bookshelf with cover thumbnails, delete, and last opened time
 3. Reader with chapter navigation, vertical/horizontal layouts, and fixed page sizing
@@ -18,7 +18,7 @@ A minimal local EPUB reader with a bookshelf, chapter list, bookmarks, and readi
 1. `web/` Frontend app
 2. `server/` Backend API and EPUB processing
 
-**Setup**
+## **Setup**
 1. Install dependencies
 ```bash
 cd /Users/unknow/Documents/codes/new-reader/scrollable-epub-reader/server
@@ -43,7 +43,7 @@ npm run dev
 1. The backend stores data in `server/data/books.db`.
 2. Re-import a book to refresh metadata like chapters or cover detection.
 
-**API Overview**
+## **API Overview**
 1. `POST /api/books/import` Import an EPUB
 2. `GET /api/books` List books
 3. `GET /api/books/:id` Book details
@@ -56,11 +56,13 @@ npm run dev
 10. `DELETE /api/books/:id/bookmarks/:bmId` Delete bookmark
 11. `PUT /api/books/:id/opened` Mark book as opened
 
+## Using with Chrome Extensions
+
 **Notes On Existing Electron EPUB Readers**
 1. Many Electron-based EPUB readers cannot use Chrome extensions at all.
 2. Chrome extensions cannot access sandboxed content.
 
-## Yomitan (Dictionary / Translation)
+### Yomitan (Dictionary / Translation)
 
 To use dictionary-style translation while reading, you can use **Yomitan** directly in your browser.
 
@@ -71,7 +73,7 @@ To use dictionary-style translation while reading, you can use **Yomitan** direc
 3. Open the reader in your browser (this project runs as a normal web app).
 4. Press `shift` and hover a word to see instant definitions and translations.
 
-**Future**
+## **Future**
 1. Implement true pagination (paged layout), not just scrolling.
 2. Support both horizontal and vertical writing modes with accurate page metrics.
 
