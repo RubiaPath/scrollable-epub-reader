@@ -60,10 +60,16 @@ npm run dev
 1. Many Electron-based EPUB readers cannot use Chrome extensions at all.
 2. Chrome extensions cannot access sandboxed content.
 
-**Security Discussion**
-1. EPUB content is untrusted input; avoid executing arbitrary scripts from book content.
-2. This project renders EPUB content inside an `iframe` and serves resources via a local API, which reduces but does not eliminate risk.
-3. Avoid exposing the server beyond localhost unless proper auth and content filtering are added.
+## Yomitan (Dictionary / Translation)
+
+To use dictionary-style translation while reading, you can use **Yomitan** directly in your browser.
+
+### Quick steps
+
+1. Install the **Yomitan** browser extension (Chrome/Edge/Firefox all supported).
+2. Import dictionaries inside Yomitan (e.g., Japanese–English, Japanese–Chinese, etc.).
+3. Open the reader in your browser (this project runs as a normal web app).
+4. Press `shift` and hover a word to see instant definitions and translations.
 
 **Future**
 1. Implement true pagination (paged layout), not just scrolling.
