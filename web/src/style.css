@@ -1,0 +1,43 @@
+:root {
+  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f1b16;
+  background-color: #fbf7f1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fbf7f1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #d9c9b1;
+  padding: 0.55em 1em;
+  font-size: 0.95em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #f2e6d6;
+  color: #2a241e;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(40, 28, 16, 0.12);
+  background-color: #f0e0c9;
+}
+button:active {
+  transform: translateY(0);
+}
+
+#app {
+  min-height: 100vh;
+}
